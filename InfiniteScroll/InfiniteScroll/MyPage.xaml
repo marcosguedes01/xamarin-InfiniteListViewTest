@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="InfiniteScroll.MyPage"
+             xmlns:Controls="clr-namespace:InfiniteScroll;assembly=InfiniteScroll"
+             >
+
+  <ContentPage.Content>
+    <StackLayout>
+      <Controls:InfiniteScrollListView LoadCommand="{Binding LoadCommand}" ItemsSource="{Binding Items}" />
+      <Controls:InfiniteScrollListView LoadCommand="{Binding LoadCommand}" ItemsSource="{Binding Items}" />
+    </StackLayout>
+  </ContentPage.Content>
+
+</ContentPage>
